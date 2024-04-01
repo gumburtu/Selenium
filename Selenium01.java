@@ -15,6 +15,12 @@ public class Selenium01 {
         String url = driver.getCurrentUrl(); //Sayfanin URL adresini alir.
         System.out.println("Costco'nun adresi : " + url); //Sayfanin URL adresini consola yazdirir.
 
+        String pageSource = driver.getPageSource(); //Sayfanin HTML kodlarini verir.
+        System.out.println("Page Source = " + pageSource);
+
+        String windowHandle = driver.getWindowHandle();
+        System.out.println("windowHandle = " + windowHandle); //Sayfanin hash kodlarini verir.
+
         driver.close(); //actigi tarayici ekranini kapatir.
     }
 }
